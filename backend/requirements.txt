@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+qdrant-client
+asyncpg
+google-generativeai
+pypdf
+python-dotenv
+tiktoken
+python-docx
