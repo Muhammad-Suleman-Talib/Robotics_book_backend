@@ -3,7 +3,8 @@ uvicorn
 pydantic
 qdrant-client
 asyncpg
-google-generativeai
+cohere
+openai
 pypdf
 python-dotenv
 tiktoken

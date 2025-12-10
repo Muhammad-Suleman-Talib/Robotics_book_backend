@@ -1,8 +1,8 @@
 # Placeholder for User service tests.
 # In a real application, you would mock database interactions.
 
-from ..src.services import user_service
-from ..src.models.user import User
+from backend.src.services import user_service
+from backend.src.models.user import User
 
 def test_create_user_service():
     user = User(username="testuser", email="test@example.com")

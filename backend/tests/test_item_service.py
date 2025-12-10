@@ -1,8 +1,8 @@
 # Placeholder for Item service tests.
 # In a real application, you would mock database interactions.
 
-from ..src.services import item_service
-from ..src.models.item import Item
+from backend.src.services import item_service
+from backend.src.models.item import Item
 
 def test_create_item_service():
     item = Item(name="testitem", description="A test item.")
