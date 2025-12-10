@@ -26,6 +26,10 @@
 #     response: str
 #     session_id: str
 
+# @app.get("/")
+# def read_root():
+#     """A simple root endpoint to confirm the server is running."""
+#     return {"message": "Welcome to the RAG Chatbot API. Use the /api/query endpoint to interact."}
 
 # # --- API Endpoints ---
 # # @app.post("/api/query", response_model=QueryResponse)
@@ -116,10 +120,6 @@
 #         )
 
 
-# @app.get("/")
-# def read_root():
-#     """A simple root endpoint to confirm the server is running."""
-#     return {"message": "Welcome to the RAG Chatbot API. Use the /api/query endpoint to interact."}
 
 # # --- Health Check Endpoint ---
 # @app.get("/health")
@@ -171,6 +171,9 @@ class QueryResponse(BaseModel):
     response: str
     session_id: str
 
+@app.get("/")
+def read_root():
+    return {"message": "API running"}
 
 # ----------------------------------------------------------
 # API Endpoint
@@ -211,9 +214,6 @@ async def handle_query(request: QueryRequest):
         )
 
 
-@app.get("/")
-def read_root():
-    return {"message": "API running"}
 
 
 @app.get("/health")
