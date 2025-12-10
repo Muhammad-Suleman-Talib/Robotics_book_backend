@@ -172,6 +172,10 @@ class QueryResponse(BaseModel):
     session_id: str
 
 
+@app.get("/")
+def read_root():
+    return {"message": "API running"}
+
 # ----------------------------------------------------------
 # API Endpoint
 # ----------------------------------------------------------
@@ -211,9 +215,6 @@ async def handle_query(request: QueryRequest):
         )
 
 
-@app.get("/")
-def read_root():
-    return {"message": "API running"}
 
 
 @app.get("/health")
