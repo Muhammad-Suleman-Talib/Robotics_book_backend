@@ -171,9 +171,7 @@ class QueryResponse(BaseModel):
     response: str
     session_id: str
 
-@app.get("/")
-def read_root():
-    return {"message": "API running"}
+
 
 @app.get("/")
 def read_root():
